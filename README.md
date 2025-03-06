@@ -7,4 +7,4 @@ I've found on several shows, including my most recent, that when rendering asset
 ## Setup
 At the moment, I have the python code in a Python LOP node with some additional parameters added for easier control. You will also need a cache node to look backwards and forwards to account for motion blur. Please see the example .hip file.
 
-AutoCropToBounds will either have to be placed after any Render Settings node, or for the dataWindowNDC parameter to be disabled in order for AutoCropToBounds to be the last LOP to be setting the dataWindowNDC value. This script will respect any previously set values should the asset reach the edge of the frame, such as overscan.
+AutoCropToBounds will either have to be placed after any Render Settings node, or for the `dataWindowNDC` parameter to be disabled in order for AutoCropToBounds to be the last LOP to be setting the dataWindowNDC value. This script will respect any previously set values should the asset reach the edge of the frame, such as overscan.
